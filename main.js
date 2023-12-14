@@ -13,7 +13,7 @@ btnTry.addEventListener('click', handleTryClick)
 btnReset.addEventListener('click', handleResetClick)
 document.addEventListener('keydown', enterClick)
 
-//function
+//functiongit commit -m "first commit"
 function handleTryClick (event) {
     event.preventDefault()
 

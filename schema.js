@@ -1,7 +1,0 @@
-db.getCollection("schemas").insertOne({
-    _id: ObjectId("62b20d09cc2be60030491e80"),
-    "name": "Schema do Step 3 da Solicitação de Cancelamento",
-        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema\",\n  \"type\": \"object\",\n  \"version\": \"2\",\n  \"title\": \"Schema do Step 3 da Solicitação de Cancelamento\",\n  \"required\": [\n    \"refundType\"\n  ],\n  \"additionalProperties\": true,\n  \"properties\": {\n    \"refundType\": {\n      \"type\": \"string\",\n      \"component\": {\n        \"props\": {\n          \"options\": [],\n          \"title\": \"Após cancelar o voo, eu quero:\"\n        },\n        \"name\": \"RadioGroup\",\n        \"column\": {\n          \"class\": \" col-xs-12 col-sm-12 col-md-12 col-lg-12\"\n        }\n      }\n    },\n    \"AlertMessage\": {\n      \"type\": \"string\",\n      \"readOnly\": true,\n      \"component\": {\n        \"props\": {\n          \"type\": \"warning\",\n          \"icon\": \"icon-max-communication-info\",\n          \"children\": \"Nos dois casos, será cobrada a taxa de cancelamento.\"\n        },\n        \"name\": \"Alert\",\n        \"column\": {\n          \"class\": \" col-xs-12 col-sm-12 col-md-12 col-lg-12\"\n        }\n      }\n    }\n  }\n}",
-        "createdAt": new Date(),
-        "updatedAt": new Date()
-})
